@@ -19,7 +19,7 @@ const FormComponent = () => {
     }],
     full_download: [],
     website: '',
-    domain: "cultural-heritage",
+    domain: "Health",
     contact_point: {
         name: '',
         email : '',
@@ -105,8 +105,8 @@ const FormComponent = () => {
             doi: data.doi || '',
             license: data.license || '',
             website: data.website || '',
-            domain: data.domain || "cultural-heritage",
-            category: ['ch-tangible', 'ch-intangible', 'ch-natural','ch-generic'].find(k => data.keywords.includes(k)) || ''
+            domain: data.domain || "Health",
+            category: [  'Clinical & Patient Data', 'Omics & Molecular Data', 'Medical Imaging & Signals','Public Health & Surveillance','Biobank & Research Data','Behavioral & Social Data','Terminologies & Metadata'].find(k => data.keywords.includes(k)) || ''
           }));
           if (data.sparql[0]?.access_url)
             setShowSparqlForm(true);
@@ -354,7 +354,7 @@ const FormComponent = () => {
         }],
         full_download: [],
         website: '',
-        domain: "cultural-heritage",
+        domain: "Health",
         contact_point: {
             name: '',
             email : '',
@@ -506,7 +506,7 @@ const FormComponent = () => {
                       </div>
                     ) : (
                       <div>
-                        <h6>LLM could not categorize your data as Cultural Heritage based on your description and name of the dataset</h6>
+                        <h6>LLM could not categorize your data as Health based on your description and name of the dataset</h6>
                         <p>You can review your metadata or you can submit anyway the dataset and a human operator will check 
                           if your dataset satisfy the inclusion criteria for the BLOD Cloud.</p>
                         <b>Model used:</b> {modalData.model_used}
@@ -806,7 +806,7 @@ const FormComponent = () => {
 
       <div className="mb-3">
 
-      <label htmlFor="sub-category" className="form-label">Cultural Heritage sub-category <span className="text-danger">*</span></label>
+      <label htmlFor="sub-category" className="form-label">Health sub-category <span className="text-danger">*</span></label>
       <select
         className="form-select"
         id="sub-category"

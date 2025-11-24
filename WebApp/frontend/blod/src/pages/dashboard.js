@@ -202,7 +202,7 @@ function Dashboard() {
                     </Col>
                     <Col md={5}>
                         <div className="card h-100 shadow-sm border-0 p-3 bg-white">
-                            <h6 className="text-center fw-bold">Datasets by Cultural Heritage Subcategory</h6>
+                            <h6 className="text-center fw-bold">Datasets by Health Subcategory</h6>
                             <PieChart categories={Object.keys(datasets_stats)} seriesData={Object.values(datasets_stats)} height={200} />
                         </div>
                     </Col>

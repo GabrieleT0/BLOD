@@ -253,7 +253,7 @@ const fetchGraphData = async () => {
                     padding: '20px',
                     borderRadius: '10px'
                 }}>
-                    <div style={{ fontSize: '18px', marginBottom: '10px' }}>Loading Cultural Heritage Data...</div>
+                    <div style={{ fontSize: '18px', marginBottom: '10px' }}>Loading Health  Data...</div>
                     <div style={{ fontSize: '14px', color: '#666' }}>Connecting to backend server</div>
                 </div>
             )}
@@ -285,7 +285,7 @@ const fetchGraphData = async () => {
                 textShadow: '1px 1px 2px rgba(0,0,0,0.1)',
                 animation: 'fadeIn 1s ease-in-out'
             }}>
-                The Cultural Heritage Linked Open Data (sub)cloud
+                The Health Linked Open Data (sub)cloud
             </h3>
 
             {/* Navigation Buttons */}
