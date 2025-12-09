@@ -270,7 +270,7 @@ const fetchGraphData = async () => {
             }}>
             BLOD
             <img
-                    src="/favicon.png"
+                    src="favicon.png"
                     alt="Cloud Logo"
                     style={{ height: "50px", width: "50px", marginLeft: "20px", marginBottom: "2px" }}
             />
